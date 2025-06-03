@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammed Nabeel M P | Web Developer Portfolio" />
+  <title>Muhammed Nabeel M P | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+    }
+
+    header {
+      height: 90vh;
+      background: url('image.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00ffff;
+    }
+
+    .headline h1 {
+      font-size: 3rem;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .headline p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #00bcd4;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00ffff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about, .projects {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-content img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 5px 20px rgba(0, 255, 255, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .about-content img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-content .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00ffff;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 80%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      color: #00ffff;
+      margin: 10px 0;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    footer p, footer a {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    footer a:hover {
+      color: #00ffff;
+    }
+
+    @media (max-width: 600px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      .headline h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <div class="headline">
+      <h1>Hello, I'm <span style="color: #00ffff;">Muhammed Nabeel M P</span></h1>
+      <p>Software Developer | MCA Student</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="js.jpg" alt="Profile Photo" />
+      <div class="text">
+        <p>I'm Muhammed Nabeel M P, a passionate web developer focused on building efficient, privacy-conscious applications. I'm currently pursuing my MCA and have built several meaningful projects using HTML, CSS, and JavaScript.</p>
+        <p>My aim is to deliver clean, fast, and impactful digital experiences that solve real-world problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project">
+        <img src="ttt.jpg" alt="Tic Tac Toe Game" />
+        <h3>Tic-Tac-Toe</h3>
+        <p>A fun, responsive game that lets users play against a basic AI or a friend.</p>
+      </div>
+      <div class="project">
+        <img src="sw.jpg" alt="Stopwatch App" />
+        <h3>Stop Watch Web</h3>
+        <p>A lightweight, browser-based stopwatch app with start, lap, and reset functionality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together or just want to say hello? Drop me a message!</p>
+    <p><a href="mailto:email@example.com">email@example.com</a></p>
+  </footer>
+
+</body>
+</html>
